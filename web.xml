@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+         https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+  <display-name>Smart Campus Assistant System</display-name>
+  <description>SCAS - University Portal with Java OOP, Servlets, and File Storage</description>
+
+  <!-- Welcome File -->
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+
+  <!-- Session Config -->
+  <session-config>
+    <session-timeout>60</session-timeout>
+  </session-config>
+
+  <!-- Auth Servlet -->
+  <servlet>
+    <servlet-name>AuthServlet</servlet-name>
+    <servlet-class>com.campus.servlets.AuthServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AuthServlet</servlet-name>
+    <url-pattern>/api/auth/*</url-pattern>
+  </servlet-mapping>
+
+  <!-- API Servlet -->
+  <servlet>
+    <servlet-name>ApiServlet</servlet-name>
+    <servlet-class>com.campus.servlets.ApiServlet</servlet-class>
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ApiServlet</servlet-name>
+    <url-pattern>/api/*</url-pattern>
+  </servlet-mapping>
+
+</web-app>

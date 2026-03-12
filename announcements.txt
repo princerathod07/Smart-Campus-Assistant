@@ -1,0 +1,5 @@
+ANN-001|Mid-Semester Examinations|Mid-semester examinations begin on March 20th. Check your schedule on the student portal and prepare accordingly.|Academic Office|HIGH|2025-03-10 09:00:00
+ANN-002|Library Extended Hours|The library will remain open until 10 PM during exam week (March 18-22).|Library Dept|MEDIUM|2025-03-09 14:00:00
+ANN-003|Campus WiFi Upgrade|Scheduled network maintenance Sunday 2-6 AM. Brief outage expected.|IT Department|MEDIUM|2025-03-08 11:00:00
+ANN-004|Annual Sports Day Registration|Annual Sports Day is April 5th. Register by March 25th.|Student Affairs|LOW|2025-03-07 10:00:00
+ANN-005|Fee Payment Deadline Reminder|Final deadline: March 31st. Visit Finance Office or pay online.|Finance Office|HIGH|2025-03-06 09:00:00

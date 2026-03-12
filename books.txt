@@ -1,0 +1,10 @@
+BK001|Introduction to Java|James Gosling|978-0134685991|Programming|true|5
+BK002|Clean Code|Robert C. Martin|978-0132350884|Software Engineering|true|3
+BK003|Design Patterns|Gang of Four|978-0201633610|Software Engineering|true|2
+BK004|Data Structures & Algorithms|Thomas Cormen|978-0262033848|Computer Science|true|4
+BK005|Computer Networks|Andrew Tanenbaum|978-0132126953|Networking|false|1
+BK006|Database System Concepts|Silberschatz|978-0073523323|Databases|true|3
+BK007|Operating System Concepts|Silberschatz|978-1118063330|Systems|true|2
+BK008|Artificial Intelligence|Stuart Russell|978-0134610993|AI/ML|true|2
+BK009|The Pragmatic Programmer|Hunt & Thomas|978-0135957059|Software Engineering|true|3
+BK010|Head First Java|Kathy Sierra|978-0596009205|Programming|true|4
