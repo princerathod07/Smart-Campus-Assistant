@@ -76,7 +76,33 @@ README.md
 
 ## How to Run the Project
 
+Clone the repository
 
+git clone https://github.com/your-username/smart-campus-assistant-system.git
+
+Open the project in an IDE
+
+You can use any Java IDE such as:
+
+IntelliJ IDEA
+
+Eclipse
+
+VS Code
+
+Configure Server
+
+Run the project using Apache Tomcat Server.
+
+Build the project using Maven
+
+mvn clean install
+
+Run the application
+
+Open in browser:
+
+http://localhost:8080
 
 ---
 
