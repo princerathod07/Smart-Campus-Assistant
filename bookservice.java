@@ -3,7 +3,7 @@ package com.yourname.project.service;
 import com.yourname.project.config.DatabaseConfig;
 import java.sql.*;
 
-public class bookservice {
+public class BookService {
     public void getAllBooks() {
         String sql = "SELECT * FROM books";
         try (Connection conn = DatabaseConfig.getConnection();
