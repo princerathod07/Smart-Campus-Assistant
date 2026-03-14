@@ -1,8 +1,9 @@
 package com.campus.users;
 
+import com.yourname.project.service.bookservice; // Ensure this matches your package
+
 /**
- * Admin class - extends User (Inheritance).
- * Demonstrates: Inheritance, Polymorphism (overrides abstract methods differently)
+ * Admin class - updated for Database integration.
  */
 public class Admin extends User {
 
@@ -23,19 +24,13 @@ public class Admin extends User {
         this.accessLevel = accessLevel;
     }
 
-    public Admin(String userId, String username, String passwordHash,
-                 String email, String fullName,
-                 String adminCode, String department,
-                 String accessLevel, String registeredAt) {
-        super(userId, username, passwordHash, email, fullName, "ADMIN", registeredAt);
-        this.adminCode = adminCode;
-        this.department = department;
-        this.accessLevel = accessLevel;
+    // New Database-linked method
+    public void displayAllBooks() {
+        System.out.println("Accessing Library Database as Admin...");
+        bookservice service = new bookservice();
+        service.getAllBooks();
     }
 
-    /**
-     * Dynamic Method Dispatch - different from Student's implementation
-     */
     @Override
     public String getRole() {
         return "ADMIN";
@@ -44,10 +39,11 @@ public class Admin extends User {
     @Override
     public String getDashboardMessage() {
         return "Admin Panel — " + getFullName()
-             + " | Department: " + department
+             + " | Dept: " + department
              + " | Access: " + accessLevel;
     }
 
+    // toFileString is kept for internal use but no longer needed for storage
     @Override
     public String toFileString() {
         return super.toFileString() + "|" + adminCode
@@ -57,17 +53,8 @@ public class Admin extends User {
     // Getters and Setters
     public String getAdminCode()              { return adminCode; }
     public void setAdminCode(String c)        { this.adminCode = c; }
-
     public String getDepartment()             { return department; }
     public void setDepartment(String d)       { this.department = d; }
-
     public String getAccessLevel()            { return accessLevel; }
     public void setAccessLevel(String l)      { this.accessLevel = l; }
-
-    @Override
-    public String toString() {
-        return "Admin{" + super.toString()
-             + ", code=" + adminCode
-             + ", access=" + accessLevel + "}";
-    }
 }
