@@ -23,7 +23,7 @@ This project demonstrates the use of Java Servlets, Object-Oriented Programming 
 ## Technologies Used
 
 ### Backend
-
+### not integrated properly (sorry for inconvenience)
 * Java
 * Java Servlets
 * Maven
